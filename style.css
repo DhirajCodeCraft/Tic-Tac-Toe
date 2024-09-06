@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: #ffffff; /* White background for the game container */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px; /* Reduced padding */
+    width: 280px; /* Reduced width */
+}
+
+h1 {
+    color: #00796b; /* Teal color for the title */
+    font-size: 2em; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin-bottom */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+}
+
+#player-info input {
+    width: calc(50% - 15px); /* Adjusted width */
+    padding: 8px; /* Reduced padding */
+    margin: 5px;
+    font-size: 0.9em; /* Reduced font size */
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); /* Reduced size */
+    grid-template-rows: repeat(3, 80px); /* Reduced size */
+    gap: 3px; /* Reduced gap */
+    margin: 15px auto; /* Reduced margin */
+}
+
+#gameboard div {
+    width: 80px; /* Reduced size */
+    height: 80px; /* Reduced size */
+    background-color: #ffffff; /* White background for cells */
+    border: 2px solid #00796b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; /* Reduced font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#gameboard div:nth-child(odd) {
+    background-color: #b2dfdb; /* Light teal for odd cells */
+}
+
+#gameboard div:nth-child(even) {
+    background-color: #4db6ac; /* Medium teal for even cells */
+}
+
+#gameboard div:hover {
+    background-color: #00796b; /* Dark teal on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+button {
+    background-color: #00796b; /* Teal background for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px; /* Reduced margin-top */
+    padding: 8px 15px; /* Reduced padding */
+    font-size: 0.9em; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+#status {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em; /* Reduced font size */
+    color: #00796b;
+}
+
+#scoreboard {
+    margin-top: 15px; /* Reduced margin-top */
+}
+
+#scoreboard p {
+    font-size: 1.1em; /* Reduced font size */
+    color: #00796b;
+}
